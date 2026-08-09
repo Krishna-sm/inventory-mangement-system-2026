@@ -3,9 +3,9 @@ const ApiError = require("../utils/ApiError")
 const ErrorHandling=(err,req,res,next)=>{
     const error_obj={
         code:500,
-        message:"Internal Server Error",
+        message:err.message ||"Internal Server Error",
         path:req.path,
-        stack:"",
+        stack:err.stack,
     }
 
     if(err instanceof ApiError){

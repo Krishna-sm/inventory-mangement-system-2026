@@ -4,12 +4,12 @@
   "description": "a fully functional inventory management system",
   "main": "index.js",
   "scripts": {
-   "dev":"nodemon --env-file=.env index.js",
-   "start":"node --env-file=.env index.js"
+    "dev": "nodemon --env-file=.env index.js",
+    "start": "node --env-file=.env index.js"
   },
   "keywords": [],
   "author": "Coderinsan@author",
-  "license": "ISC", 
+  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1",
