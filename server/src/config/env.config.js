@@ -16,7 +16,7 @@ function getKey(key,existed){
 
 class EnvConfig{
     static PORT = getRequire("PORT")
-    static DB_STRING= getKey("DB_STRING","mongodb://localhost:27017/inventory_system")
+    static DB_STRING= getRequire("DB_STRING")
 }
 
 module.exports = EnvConfig
